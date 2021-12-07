@@ -1,0 +1,15 @@
+{
+  "name": "ts-example-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx snowpack dev",
+    "build": "npx snowpack build"
+  },
+  "keywords": [],
+  "author": "Jose Miguel",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.8.8",
+    "typescript": "^4.5.2"
+  }
+}
