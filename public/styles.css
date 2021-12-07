@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
+:root {
+  --primary-color: #5e5df0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,8 +36,8 @@ header {
 }
 
 .header-title a:hover {
-  color: #12a1c5;
-  text-shadow: 2px 2px 0px #fff;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 0px #fff;
 }
 
 .header-icon {
@@ -63,7 +67,7 @@ header {
   height: 27rem;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 14px #dddcdcdc;
+  box-shadow: 0 0 12px #dddcdcdc;
 }
 
 .question-title {
@@ -100,24 +104,33 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 15px;
+  gap: 16px;
 }
 
 .btn-primary {
-  width: 85%;
-  height: 40px;
-  border: none;
-  border-radius: 8px;
-  background: #12a1c5;
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
+  background: var(--primary-color);
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
   outline: 0;
+  padding: 8px 18px;
+  touch-action: manipulation;
+  border: 0;
+  width: 70%;
+  height: 40px;
 }
 
 .btn-primary:hover {
   cursor: pointer;
-  background: #0f93b4;
+  background: #5e5df0;
+  box-shadow: var(--primary-color) 0 10px 20px -10px;
+}
+
+.btn-primary:active {
+  transform: scale(0.9);
+  transition-duration: 0.9s;
 }
 
 .questions-of {

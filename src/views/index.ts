@@ -11,7 +11,9 @@ export const nextQuestion = (quiz: Quiz, render: RenderUI) => {
 
     quiz.selectAnswer((value: string) => {
       quiz.guessAnswer(value)
-      nextQuestion(quiz, render)
+      setTimeout(() => {
+        nextQuestion(quiz, render)
+      }, 230)
     })
 
     return

@@ -17,7 +17,10 @@ export class Quiz implements QuizInterface {
 
   guessAnswer(answer: string) {
     if (this.getCurrentQuestion().checkCorrectAnswer(answer)) {
+      $(`[data-value=${answer}]`).style.background = '#0fd493'
       this.score++
+    } else {
+      $(`[data-value=${answer}]`).style.background = '#e74c4c'
     }
 
     this.questionIndex++
