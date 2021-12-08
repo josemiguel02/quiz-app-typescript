@@ -13,7 +13,7 @@ export const nextQuestion = (quiz: Quiz, render: RenderUI) => {
       quiz.guessAnswer(value)
       setTimeout(() => {
         nextQuestion(quiz, render)
-      }, 230)
+      }, 550)
     })
 
     return
