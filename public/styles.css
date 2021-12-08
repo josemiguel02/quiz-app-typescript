@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 :root {
-  --primary-color: #5e5df0;
+  --primary-color: #6c6cec;
 }
 
 * {
@@ -43,7 +43,7 @@ header {
 .header-icon {
   font-size: 35px;
   font-style: normal;
-  margin-right: 1em;
+  margin: 0.2em 1em;
 }
 
 .container-main {
