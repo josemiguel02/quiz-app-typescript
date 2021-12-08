@@ -19,6 +19,6 @@ export interface QuizInterface {
   getCurrentQuestion: () => void
   guessAnswer: (answer: string) => void
   isFinished: () => boolean
-  selectAnswer: (callback: Function) => void
-  tryAgain: (callback: Function) => void
+  selectAnswer: (callback: (value: string) => void) => void
+  tryAgain: (callback: () => void) => void
 }
