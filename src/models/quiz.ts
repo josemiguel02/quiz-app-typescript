@@ -30,14 +30,14 @@ export class Quiz implements QuizInterface {
     return this.questions.length === this.questionIndex
   }
 
-  selectAnswer(callback: Function) {
+  selectAnswer(callback: (value: string) => void) {
     $$('.btn-primary').forEach(btn => {
-      const value: string = btn.getAttribute('data-value')!
+      const value = btn.getAttribute('data-value')!
       btn.onclick = () => callback(value)
     })
   }
 
-  tryAgain(callback: Function) {
+  tryAgain(callback: () => void) {
     $('.btn-primary').onclick = () => callback()
   }
 }
