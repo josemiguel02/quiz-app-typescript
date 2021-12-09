@@ -3,16 +3,10 @@
 ## Description
 #### Simple application of Quiz about programming using Typescript and Snowpack.
 
-<br />
-
 ### [Deployed Quiz App](https://josemiguel02.github.io/quiz-app)
-
-<br />
 
 ## Preview
 ![Logo](./public/img/preview.gif 'Quiz app')
-
-<br />
 
 ### Project setup
 ```
