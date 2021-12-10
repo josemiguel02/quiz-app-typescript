@@ -2,8 +2,8 @@
   "name": "ts-example-app",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx snowpack dev",
-    "build": "npx snowpack build"
+    "dev": "snowpack dev",
+    "build": "tsc && snowpack build"
   },
   "keywords": [],
   "author": "Jose Miguel",
