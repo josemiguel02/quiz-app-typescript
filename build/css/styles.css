@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+:root {
+  --primary-color: #6c6cec;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+}
+
+body {
+  background: #283238;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #303b42;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 0 10px #2f3a41c9;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.2em 1em;
+}
+
+.header-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-title a:hover {
+  color: var(--primary-color);
+  text-shadow: 1px 1px 0px #fff;
+}
+
+.header-icon {
+  font-size: 35px;
+  font-style: normal;
+  margin: 0.2em 1em;
+}
+
+.container-main {
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px 8px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 30rem;
+  height: 27rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #dddcdcdc;
+}
+
+.question-title {
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #353535;
+  text-align: center;
+  max-width: 80%;
+}
+
+.question-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  font-size: 30px;
+  font-weight: bold;
+  color: #353535;
+  text-align: center;
+}
+
+.score-icon {
+  font-size: 40px;
+  margin-top: 14px;
+  font-style: normal;
+}
+
+.container-answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+  padding: 8px 18px;
+  touch-action: manipulation;
+  border: 0;
+  width: 70%;
+  height: 40px;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background: #5e5df0;
+  box-shadow: var(--primary-color) 0 10px 20px -10px;
+}
+
+.btn-primary:active {
+  transform: scale(0.9);
+  transition-duration: 0.9s;
+}
+
+.questions-of {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #242424;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
